@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KDAG Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navpicture">
+    <img id="logo" src="https://www.kdagiitkgp.com/static/media/KDAG-textnew.ad514bad3b46ed6de9a3.png" alt="">
+    </div>
+    <div class="nav-logo"></div>
+    <ul class="nav-links">
+      <li><a href="https://www.kdagiitkgp.com/events">Events</a></li>
+      <li><a href="https://www.kdagiitkgp.com/events">Gallery</a></li>
+      <li><a href="https://www.kdagiitkgp.com/ml_sheet">ML Sheet</a></li>
+      <li><a href="https://www.kdagiitkgp.com/resources">Resources</a></li>
+      <li><a href="https://www.kdagiitkgp.com/blogs">Blog</a></li>
+      <li><a href="https://www.kdagiitkgp.com/team">Team</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="quiz-container">
+    <h1 class="quiz-title">🚀 KDAG Interactive Quiz</h1>
+    <form id="quizForm">
+      
+      <div class="question">
+        <p>1. What does KDAG stand for?</p>
+        <label><input type="radio" name="q1" value="a"> Knowledge Discovery and Analytics Group</label>
+        <label><input type="radio" name="q1" value="b"> Knowledge Data and Graphs</label>
+        <label><input type="radio" name="q1" value="c"> Kolkata Data Analytics Guild</label>
+      </div>
+      
+      <div class="question">
+        <p>2. Which programming language is most associated with data analysis?</p>
+        <label><input type="radio" name="q2" value="a"> Python</label>
+        <label><input type="radio" name="q2" value="b"> C</label>
+        <label><input type="radio" name="q2" value="c"> Assembly</label>
+      </div>
+      
+      <div class="question">
+        <p>3. Which library is commonly used for visualization in Python?</p>
+        <label><input type="radio" name="q3" value="a"> Matplotlib</label>
+        <label><input type="radio" name="q3" value="b"> jQuery</label>
+        <label><input type="radio" name="q3" value="c"> Bootstrap</label>
+      </div>
+      
+      <div class="question">
+        <p>4.structured data is best stored in?</p>
+        <label><input type="radio" name="q4" value="a"> SQL</label>
+        <label><input type="radio" name="q4" value="b"> Excel</label>
+        <label><input type="radio" name="q4" value="c"> PDF</label>
+      </div>
+      
+      <div class="question">
+        <p>5. What is the main goal of data visualization?</p>
+        <label><input type="radio" name="q5" value="a"> To make data beautiful</label>
+        <label><input type="radio" name="q5" value="b"> To communicate insights clearly</label>
+        <label><input type="radio" name="q5" value="c"> To replace raw data entirely</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <div id="results" class="results hidden"></div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
